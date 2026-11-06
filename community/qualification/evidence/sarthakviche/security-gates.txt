@@ -1,0 +1,21 @@
+CONDENSED from the raw run; history paths and tracebacks are summarized, not edited.
+
+$ gitleaks version
+8.30.1
+
+$ python scripts/security/scan.py tracked
+{"path": "docs/aegisai/research/INVENTION_CANDIDATES.md"}
+{"path": "research/results/aegisai009-smoke/environment.json"}
+{"path": "research/results/aegisai010-local-smoke/environment.json"}
+FAIL: publication gate requires review
+[exit code: 1]
+
+$ python scripts/security/scan.py history
+13 path/commit findings, listed by the gate for owner review
+[exit code: 1]
+
+$ python -m unittest discover -s scripts/security/tests
+Ran 27 tests in 10.492s
+FAILED (errors=21)
+[exit code: 1]
+error types: {'FileNotFoundError': 18, 'OSError': 2, 'TypeError': 1}

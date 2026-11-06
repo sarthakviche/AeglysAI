@@ -1,0 +1,37 @@
+$ dotnet test AeglysAI.sln --configuration Release --no-build --no-restore
+Test run for <REPO>\tests\AeglysAI.Application.Tests\bin\Release\net8.0\AeglysAI.Application.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for <REPO>\tests\AeglysAI.Experiments.Tests\bin\Release\net8.0\AeglysAI.Experiments.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for <REPO>\tests\AeglysAI.ArchitectureTests\bin\Release\net8.0\AeglysAI.ArchitectureTests.dll (.NETCoreApp,Version=v8.0)
+Test run for <REPO>\tests\AeglysAI.IntegrationTests\bin\Release\net8.0\AeglysAI.IntegrationTests.dll (.NETCoreApp,Version=v8.0)
+Test run for <REPO>\tests\AeglysAI.Domain.Tests\bin\Release\net8.0\AeglysAI.Domain.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+VSTest version 17.11.1 (x64)
+VSTest version 17.11.1 (x64)
+
+
+VSTest version 17.11.1 (x64)
+VSTest version 17.11.1 (x64)
+
+
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    53, Skipped:     0, Total:    53, Duration: 54 ms - AeglysAI.Application.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 26 ms - AeglysAI.Domain.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 21 ms - AeglysAI.ArchitectureTests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 34 ms - AeglysAI.Experiments.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:    93, Skipped:     0, Total:    93, Duration: 4 s - AeglysAI.IntegrationTests.dll (net8.0)
+[exit code: 0]

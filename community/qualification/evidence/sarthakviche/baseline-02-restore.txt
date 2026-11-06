@@ -1,0 +1,14 @@
+$ dotnet restore AeglysAI.sln
+  Determining projects to restore...
+  Restored <REPO>\benchmarks\AeglysAI.Experiments\AeglysAI.Experiments.csproj (in 73 ms).
+  Restored <REPO>\src\AeglysAI.Infrastructure\AeglysAI.Infrastructure.csproj (in 73 ms).
+  Restored <REPO>\src\AeglysAI.Domain\AeglysAI.Domain.csproj (in 67 ms).
+  Restored <REPO>\deployment\docker\AeglysAI.DevTools\AeglysAI.DevTools.csproj (in 67 ms).
+  Restored <REPO>\src\AeglysAI.Application\AeglysAI.Application.csproj (in 73 ms).
+  Restored <REPO>\src\AeglysAI.Api\AeglysAI.Api.csproj (in 195 ms).
+  Restored <REPO>\tests\AeglysAI.Application.Tests\AeglysAI.Application.Tests.csproj (in 313 ms).
+  Restored <REPO>\tests\AeglysAI.ArchitectureTests\AeglysAI.ArchitectureTests.csproj (in 312 ms).
+  Restored <REPO>\tests\AeglysAI.Domain.Tests\AeglysAI.Domain.Tests.csproj (in 313 ms).
+  Restored <REPO>\tests\AeglysAI.Experiments.Tests\AeglysAI.Experiments.Tests.csproj (in 313 ms).
+  Restored <REPO>\tests\AeglysAI.IntegrationTests\AeglysAI.IntegrationTests.csproj (in 313 ms).
+[exit code: 0]

@@ -1,0 +1,39 @@
+clone setting: core.autocrlf=true  commit: 57c23b905c43d0340af0876d83e93846dfba0e8a
+      2 i/-text w/-text attr/text=auto
+      1 i/crlf w/crlf attr/-text
+    294 i/lf w/lf attr/text=auto
+      8 i/none w/none attr/text=auto
+$ python -m unittest discover -s scripts/community/tests
+...........................................................................E...............
+======================================================================
+ERROR: test_traversal_and_symlink_escape_rejected (test_monthly.MonthlyTests.test_traversal_and_symlink_escape_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<SCRATCH>\green\scripts\community\tests\test_monthly.py", line 129, in test_traversal_and_symlink_escape_rejected
+    (root/'source-evidence.json').symlink_to(self.artifacts/'source-evidence.json')
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1386, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: '<SCRATCH>\\green\\community\\reporting\\fixtures\\snapshots\\source-evidence.json' -> '<USER_HOME>\\AppData\\Local\\Temp\\tmp23cox6xw\\artifacts\\source-evidence.json'
+
+----------------------------------------------------------------------
+Ran 91 tests in 3.307s
+
+FAILED (errors=1)
+[exit code: 1]
+
+$ python scripts/community/check_docs.py
+PASS: local Markdown targets and fences; remote URLs/anchors not checked
+[exit code: 0]
+
+$ python -m unittest discover -s research/acbsd/tests
+...................
+----------------------------------------------------------------------
+Ran 19 tests in 6.609s
+
+OK
+[exit code: 0]
+
+$ python -m research.acbsd.verify research/acbsd/examples/smoke-v1
+{'families': {'api_frequency': 25, 'failed_auth': 15, 'normal_api': 35, 'normal_auth': 40, 'normal_workload': 40, 'operational_surge': 20, 'privilege_usage': 20, 'workload_communication': 5}, 'instances': 40, 'labels': {'False': 135, 'True': 65}, 'partitions': {'holdout': {'True': 5}, 'test': {'False': 35, 'True': 15}, 'train': {'False': 65, 'True': 30}, 'validation': {'False': 35, 'True': 15}}, 'rows': 200}
+[exit code: 0]
+

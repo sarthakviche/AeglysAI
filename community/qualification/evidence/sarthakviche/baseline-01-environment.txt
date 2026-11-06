@@ -1,0 +1,15 @@
+date_utc: 2026-11-06T18:31:00Z
+origin: https://github.com/sarthakviche/AeglysAI.git
+branch: qualification/sarthakviche
+commit: 48047e46aee115181dc0fd67a45105a0b7a45a45
+os: Microsoft Windows 11 Home Single Language build 26300
+arch: x86_64
+dotnet_sdk: 8.0.427
+dotnet_runtimes:
+Microsoft.AspNetCore.App 8.0.33 [<USER_HOME>\AppData\Local\dotnet-aeglys\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 8.0.33 [<USER_HOME>\AppData\Local\dotnet-aeglys\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 8.0.33 [<USER_HOME>\AppData\Local\dotnet-aeglys\shared\Microsoft.WindowsDesktop.App]
+python: Python 3.12.5
+git: git version 2.50.1.windows.1
+docker_cli: Docker version 29.5.3, build d1c06ef
+docker_daemon:  (empty = not running)

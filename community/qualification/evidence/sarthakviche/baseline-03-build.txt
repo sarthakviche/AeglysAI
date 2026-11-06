@@ -1,0 +1,19 @@
+$ dotnet build AeglysAI.sln --configuration Release --no-restore
+  AeglysAI.Domain -> <REPO>\src\AeglysAI.Domain\bin\Release\net8.0\AeglysAI.Domain.dll
+  AeglysAI.ArchitectureTests -> <REPO>\tests\AeglysAI.ArchitectureTests\bin\Release\net8.0\AeglysAI.ArchitectureTests.dll
+  AeglysAI.DevTools -> <REPO>\deployment\docker\AeglysAI.DevTools\bin\Release\net8.0\AeglysAI.DevTools.dll
+  AeglysAI.Application -> <REPO>\src\AeglysAI.Application\bin\Release\net8.0\AeglysAI.Application.dll
+  AeglysAI.Domain.Tests -> <REPO>\tests\AeglysAI.Domain.Tests\bin\Release\net8.0\AeglysAI.Domain.Tests.dll
+  AeglysAI.Infrastructure -> <REPO>\src\AeglysAI.Infrastructure\bin\Release\net8.0\AeglysAI.Infrastructure.dll
+  AeglysAI.Application.Tests -> <REPO>\tests\AeglysAI.Application.Tests\bin\Release\net8.0\AeglysAI.Application.Tests.dll
+  AeglysAI.Experiments -> <REPO>\benchmarks\AeglysAI.Experiments\bin\Release\net8.0\AeglysAI.Experiments.dll
+  AeglysAI.Api -> <REPO>\src\AeglysAI.Api\bin\Release\net8.0\AeglysAI.Api.dll
+  AeglysAI.Experiments.Tests -> <REPO>\tests\AeglysAI.Experiments.Tests\bin\Release\net8.0\AeglysAI.Experiments.Tests.dll
+  AeglysAI.IntegrationTests -> <REPO>\tests\AeglysAI.IntegrationTests\bin\Release\net8.0\AeglysAI.IntegrationTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.77
+[exit code: 0]

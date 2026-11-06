@@ -1,0 +1,61 @@
+clone setting: core.autocrlf=true  commit: 48047e46aee115181dc0fd67a45105a0b7a45a45  (regression test added, .gitattributes absent)
+$ python -m unittest test_line_endings
+FFFFFFF
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='dev')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='.githooks/pre-commit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='scripts/security/install-gitleaks
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='research/acbsd/examples/smoke-v1/
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='research/acbsd/examples/smoke-v1/
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_hash_pinned_paths_are_declared_lf (test_line_endings.LineEndingTests.test_hash_pinned_paths_are_declared_lf) (path='community/reporting/fixtures/snap
+----------------------------------------------------------------------
+Traceback (most recent call last):
+AssertionError: 'unspecified' != 'lf'
+- unspecified
++ lf
+
+
+======================================================================
+FAIL: test_no_tracked_text_is_converted_on_checkout (test_line_endings.LineEndingTests.test_no_tracked_text_is_converted_on_checkout)
+----------------------------------------------------------------------
+Traceback (most recent call last):

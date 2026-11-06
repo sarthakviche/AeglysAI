@@ -1,0 +1,40 @@
+$ python -m unittest discover -s research/acbsd/tests -v
+test_end_to_end_train_only_fit_and_test_label_independence (test_benchmark.BenchmarkTests.test_end_to_end_train_only_fit_and_test_label_independence) ... ok
+test_failed_cli_run_is_recorded_without_overwriting (test_benchmark.BenchmarkTests.test_failed_cli_run_is_recorded_without_overwriting) ... ok
+test_feature_allowlist_ignores_truth_and_identifiers (test_benchmark.BenchmarkTests.test_feature_allowlist_ignores_truth_and_identifiers) ... ok
+test_metrics_denominators_and_score_orientation (test_benchmark.BenchmarkTests.test_metrics_denominators_and_score_orientation) ... ok
+test_surge_is_not_flagged_by_volume_alone (test_benchmark.BenchmarkTests.test_surge_is_not_flagged_by_volume_alone) ... ok
+test_threshold_uses_validation_and_cluster_intervals (test_benchmark.BenchmarkTests.test_threshold_uses_validation_and_cluster_intervals) ... ok
+test_all_families_and_hard_negative (test_dataset.DatasetTests.test_all_families_and_hard_negative) ... ok
+test_bad_configuration_and_partial_instance (test_dataset.DatasetTests.test_bad_configuration_and_partial_instance) ... ok
+test_chronological_split_and_temporal_mutation (test_dataset.DatasetTests.test_chronological_split_and_temporal_mutation) ... ok
+test_groups_and_family_holdout (test_dataset.DatasetTests.test_groups_and_family_holdout) ... ok
+test_quality_rejects_mutations (test_dataset.DatasetTests.test_quality_rejects_mutations) ... ok
+test_reproducible_bytes_and_seed_effect (test_dataset.DatasetTests.test_reproducible_bytes_and_seed_effect) ... ok
+test_research_volume_accepts_repeated_features (test_dataset.DatasetTests.test_research_volume_accepts_repeated_features) ... ok
+test_tamper_and_no_overwrite (test_dataset.DatasetTests.test_tamper_and_no_overwrite) ... ok
+test_boundaries_and_expectations (test_risk.RiskTests.test_boundaries_and_expectations) ... ok
+test_consistency_and_monotonicity (test_risk.RiskTests.test_consistency_and_monotonicity) ... ok
+test_evaluation_records_wrong_and_consistent_recommendations (test_risk.RiskTests.test_evaluation_records_wrong_and_consistent_recommendations) ... ok
+test_invalid_evidence_fails_closed (test_risk.RiskTests.test_invalid_evidence_fails_closed) ... ok
+test_exports_preserve_observations_and_isolate_instances (test_splits.SplitExportTests.test_exports_preserve_observations_and_isolate_instances) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 7.097s
+
+OK
+[exit code: 0]
+$ python -m research.acbsd.verify research/acbsd/examples/smoke-v1
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<REPO>\research\acbsd\verify.py", line 25, in <module>
+    print(verify(parser.parse_args().dataset))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\research\acbsd\verify.py", line 9, in verify
+    events, truth, manifest = load_dataset(path)
+                              ^^^^^^^^^^^^^^^^^^
+  File "<REPO>\research\acbsd\dataset.py", line 191, in load_dataset
+    raise ValueError('integrity mismatch')
+ValueError: integrity mismatch
+[exit code: 1]

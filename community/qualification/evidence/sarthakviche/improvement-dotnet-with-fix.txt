@@ -1,0 +1,73 @@
+$ dotnet restore AeglysAI.sln
+  Determining projects to restore...
+  Restored <SCRATCH>\green\benchmarks\AeglysAI.Experiments\AeglysAI.Experiments.csproj (in 73 ms).
+  Restored <SCRATCH>\green\src\AeglysAI.Infrastructure\AeglysAI.Infrastructure.csproj (in 72 ms).
+  Restored <SCRATCH>\green\src\AeglysAI.Application\AeglysAI.Application.csproj (in 72 ms).
+  Restored <SCRATCH>\green\src\AeglysAI.Domain\AeglysAI.Domain.csproj (in 68 ms).
+  Restored <SCRATCH>\green\deployment\docker\AeglysAI.DevTools\AeglysAI.DevTools.csproj (in 68 ms).
+  Restored <SCRATCH>\green\src\AeglysAI.Api\AeglysAI.Api.csproj (in 212 ms).
+  Restored <SCRATCH>\green\tests\AeglysAI.Domain.Tests\AeglysAI.Domain.Tests.csproj (in 332 ms).
+  Restored <SCRATCH>\green\tests\AeglysAI.Application.Tests\AeglysAI.Application.Tests.csproj (in 332 ms).
+  Restored <SCRATCH>\green\tests\AeglysAI.ArchitectureTests\AeglysAI.ArchitectureTests.csproj (in 332 ms).
+  Restored <SCRATCH>\green\tests\AeglysAI.IntegrationTests\AeglysAI.IntegrationTests.csproj (in 332 ms).
+  Restored <SCRATCH>\green\tests\AeglysAI.Experiments.Tests\AeglysAI.Experiments.Tests.csproj (in 332 ms).
+[exit code: 0]
+
+$ dotnet build AeglysAI.sln --configuration Release --no-restore
+  AeglysAI.Domain -> <SCRATCH>\green\src\AeglysAI.Domain\bin\Release\net8.0\AeglysAI.Domain.dll
+  AeglysAI.ArchitectureTests -> <SCRATCH>\green\tests\AeglysAI.ArchitectureTests\bin\Release\net8.0\AeglysAI.ArchitectureTests.dll
+  AeglysAI.DevTools -> <SCRATCH>\green\deployment\docker\AeglysAI.DevTools\bin\Release\net8.0\AeglysAI.DevTools.dll
+  AeglysAI.Application -> <SCRATCH>\green\src\AeglysAI.Application\bin\Release\net8.0\AeglysAI.Application.dll
+  AeglysAI.Domain.Tests -> <SCRATCH>\green\tests\AeglysAI.Domain.Tests\bin\Release\net8.0\AeglysAI.Domain.Tests.dll
+  AeglysAI.Infrastructure -> <SCRATCH>\green\src\AeglysAI.Infrastructure\bin\Release\net8.0\AeglysAI.Infrastructure.dll
+  AeglysAI.Application.Tests -> <SCRATCH>\green\tests\AeglysAI.Application.Tests\bin\Release\net8.0\AeglysAI.Application.Tests.dll
+  AeglysAI.Experiments -> <SCRATCH>\green\benchmarks\AeglysAI.Experiments\bin\Release\net8.0\AeglysAI.Experiments.dll
+  AeglysAI.Api -> <SCRATCH>\green\src\AeglysAI.Api\bin\Release\net8.0\AeglysAI.Api.dll
+  AeglysAI.Experiments.Tests -> <SCRATCH>\green\tests\AeglysAI.Experiments.Tests\bin\Release\net8.0\AeglysAI.Experiments.Tests.dll
+  AeglysAI.IntegrationTests -> <SCRATCH>\green\tests\AeglysAI.IntegrationTests\bin\Release\net8.0\AeglysAI.IntegrationTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.55
+[exit code: 0]
+
+$ dotnet test AeglysAI.sln --configuration Release --no-build --no-restore
+Test run for <SCRATCH>\green\tests\AeglysAI.ArchitectureTests\bin\Release\net8.0\AeglysAI.ArchitectureTests.dll (.NETCoreApp,Version=v8.0)
+Test run for <SCRATCH>\green\tests\AeglysAI.Domain.Tests\bin\Release\net8.0\AeglysAI.Domain.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for <SCRATCH>\green\tests\AeglysAI.IntegrationTests\bin\Release\net8.0\AeglysAI.IntegrationTests.dll (.NETCoreApp,Version=v8.0)
+Test run for <SCRATCH>\green\tests\AeglysAI.Application.Tests\bin\Release\net8.0\AeglysAI.Application.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for <SCRATCH>\green\tests\AeglysAI.Experiments.Tests\bin\Release\net8.0\AeglysAI.Experiments.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)VSTest version 17.11.1 (x64)VSTest version 17.11.1 (x64)
+
+VSTest version 17.11.1 (x64)
+
+VSTest version 17.11.1 (x64)
+
+
+
+
+
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 23 ms - AeglysAI.Domain.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:    53, Skipped:     0, Total:    53, Duration: 27 ms - AeglysAI.Application.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 2 ms - AeglysAI.ArchitectureTests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 22 ms - AeglysAI.Experiments.Tests.dll (net8.0)
+
+Passed!  - Failed:     0, Passed:    93, Skipped:     0, Total:    93, Duration: 5 s - AeglysAI.IntegrationTests.dll (net8.0)
+[exit code: 0]
+

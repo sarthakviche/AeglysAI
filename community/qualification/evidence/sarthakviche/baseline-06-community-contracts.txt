@@ -1,0 +1,417 @@
+$ python -m unittest discover -s scripts/community/tests -v
+test_affiliated_external_is_not_independent (test_adoption.AdoptionTests.test_affiliated_external_is_not_independent) ... ok
+test_corrected_record_requires_superseded_prior (test_adoption.AdoptionTests.test_corrected_record_requires_superseded_prior) ... ok
+test_draft_unknown_relationship_allowed_but_not_verified (test_adoption.AdoptionTests.test_draft_unknown_relationship_allowed_but_not_verified) ... ok
+test_duplicate_and_cyclic_records_rejected (test_adoption.AdoptionTests.test_duplicate_and_cyclic_records_rejected) ... ok
+test_engagement_and_person_fields_rejected (test_adoption.AdoptionTests.test_engagement_and_person_fields_rejected) ... ok
+test_internal_usage_not_independent_adoption (test_adoption.AdoptionTests.test_internal_usage_not_independent_adoption) ... ok
+test_invalid_doi_reference (test_adoption.AdoptionTests.test_invalid_doi_reference) ... ok
+test_negative_fixtures (test_adoption.AdoptionTests.test_negative_fixtures) ... ok
+test_positive_fixture (test_adoption.AdoptionTests.test_positive_fixture) ... ok
+test_real_data_cannot_use_dummy_source (test_adoption.AdoptionTests.test_real_data_cannot_use_dummy_source) ... ok
+test_synthetic_third_party_integration_fixture (test_adoption.AdoptionTests.test_synthetic_third_party_integration_fixture) ... ok
+test_verified_requires_review (test_adoption.AdoptionTests.test_verified_requires_review) ... ok
+test_withdrawal_is_not_verified (test_adoption.AdoptionTests.test_withdrawal_is_not_verified) ... ok
+test_duplicate_json_fields_rejected_in_pinned_artifact (test_contract_tools.SnapshotIntegrityTests.test_duplicate_json_fields_rejected_in_pinned_artifact) ... ok
+test_hash_and_parse_use_same_bytes_when_file_changes (test_contract_tools.SnapshotIntegrityTests.test_hash_and_parse_use_same_bytes_when_file_changes) ... ok
+test_oversized_pinned_artifact_rejected (test_contract_tools.SnapshotIntegrityTests.test_oversized_pinned_artifact_rejected) ... ok
+test_all_five_levels_valid (test_evidence.EvidenceTests.test_all_five_levels_valid) ... ok
+test_blank_definitions_and_unknown_version_rejected (test_evidence.EvidenceTests.test_blank_definitions_and_unknown_version_rejected) ... ok
+test_cli_redacts_values_and_fails_closed (test_evidence.EvidenceTests.test_cli_redacts_values_and_fails_closed) ... ok
+test_draft_not_verified (test_evidence.EvidenceTests.test_draft_not_verified) ... ok
+test_duplicate_ids (test_evidence.EvidenceTests.test_duplicate_ids) ... ok
+test_equal_period_rejected (test_evidence.EvidenceTests.test_equal_period_rejected) ... ok
+test_invalid_fixtures_rejected (test_evidence.EvidenceTests.test_invalid_fixtures_rejected) ... ok
+test_json_duplicate_fields_and_nonfinite_rejected (test_evidence.EvidenceTests.test_json_duplicate_fields_and_nonfinite_rejected) ... ok
+test_level_and_unit_must_match (test_evidence.EvidenceTests.test_level_and_unit_must_match) ... ok
+test_missing_schema_fails (test_evidence.EvidenceTests.test_missing_schema_fails) ... ok
+test_nonnegative_and_integer_counts (test_evidence.EvidenceTests.test_nonnegative_and_integer_counts) ... ok
+test_nonpublic_or_credential_urls_rejected (test_evidence.EvidenceTests.test_nonpublic_or_credential_urls_rejected) ... ok
+test_public_source_rejects_dummy_provenance (test_evidence.EvidenceTests.test_public_source_rejects_dummy_provenance) ... ok
+test_size_limit (test_evidence.EvidenceTests.test_size_limit) ... ok
+test_synthetic_cannot_masquerade_as_real_source (test_evidence.EvidenceTests.test_synthetic_cannot_masquerade_as_real_source) ... ok
+test_timezone_required_and_actual_date_checked (test_evidence.EvidenceTests.test_timezone_required_and_actual_date_checked) ... ok
+test_unknown_fields_rejected_at_every_boundary (test_evidence.EvidenceTests.test_unknown_fields_rejected_at_every_boundary) ... ok
+test_verified_synthetic_is_only_contract_verified (test_evidence.EvidenceTests.test_verified_synthetic_is_only_contract_verified) ... ok
+test_governance_evidence_and_templates_exist (test_governance.GovernanceTests.test_governance_evidence_and_templates_exist) ... ok
+test_governance_local_links_resolve (test_governance.GovernanceTests.test_governance_local_links_resolve) ... ok
+test_roadmap_covers_all_eight_packages (test_governance.GovernanceTests.test_roadmap_covers_all_eight_packages) ... ok
+test_all_local_community_markdown_links_resolve (test_hackathon.HackathonContractTests.test_all_local_community_markdown_links_resolve) ... ok
+test_everyday_life_example_and_shared_submission_rules (test_hackathon.HackathonContractTests.test_everyday_life_example_and_shared_submission_rules) ... ok
+test_exactly_six_distinct_tracks_and_runnable_json_inputs (test_hackathon.HackathonContractTests.test_exactly_six_distinct_tracks_and_runnable_json_inputs) ... ok
+test_examples_have_expected_minimum_contracts (test_hackathon.HackathonContractTests.test_examples_have_expected_minimum_contracts) ... ok
+test_sixth_challenge_is_listed_in_participant_contracts (test_hackathon.HackathonContractTests.test_sixth_challenge_is_listed_in_participant_contracts) ... ok
+test_templates_checklists_and_safety_are_present (test_hackathon.HackathonContractTests.test_templates_checklists_and_safety_are_present) ... ok
+test_every_member_must_qualify_and_team_changes_are_reviewed (test_hackathon.ParticipationAmendmentTests.test_every_member_must_qualify_and_team_changes_are_reviewed) ... ok
+test_executable_projects_and_separate_publication_consent (test_hackathon.ParticipationAmendmentTests.test_executable_projects_and_separate_publication_consent) ... ok
+test_independent_judging_assistance_and_meet_boundaries (test_hackathon.ParticipationAmendmentTests.test_independent_judging_assistance_and_meet_boundaries) ... ok
+test_competition_requires_reproducible_project_and_short_demo (test_hackathon.QualificationComplianceTests.test_competition_requires_reproducible_project_and_short_demo) ... ok
+test_judging_rounds_each_total_one_hundred_and_have_integrity_rules (test_hackathon.QualificationComplianceTests.test_judging_rounds_each_total_one_hundred_and_have_integrity_rules) ... ok
+test_qualification_is_ordered_and_not_optional (test_hackathon.QualificationComplianceTests.test_qualification_is_ordered_and_not_optional) ... ok
+test_workspace_keeps_administration_private_without_database (test_hackathon.QualificationComplianceTests.test_workspace_keeps_administration_private_without_database) ... ok
+test_approval_before_period_end_rejected (test_monthly.MonthlyTests.test_approval_before_period_end_rejected) ... ERROR
+test_approved_synthetic_is_still_synthetic (test_monthly.MonthlyTests.test_approved_synthetic_is_still_synthetic) ... ERROR
+test_calendar_month_and_december_boundary (test_monthly.MonthlyTests.test_calendar_month_and_december_boundary) ... ERROR
+test_cli_redacts_failure_and_missing_dependency (test_monthly.MonthlyTests.test_cli_redacts_failure_and_missing_dependency) ... ok
+test_data_kind_cannot_be_relabelled_real (test_monthly.MonthlyTests.test_data_kind_cannot_be_relabelled_real) ... ERROR
+test_definition_or_unit_change_rejected (test_monthly.MonthlyTests.test_definition_or_unit_change_rejected) ... ERROR
+test_draft_sources_cannot_be_promoted (test_monthly.MonthlyTests.test_draft_sources_cannot_be_promoted) ... ERROR
+test_duplicate_reference_does_not_double_count (test_monthly.MonthlyTests.test_duplicate_reference_does_not_double_count) ... ERROR
+test_duplicate_source (test_monthly.MonthlyTests.test_duplicate_source) ... ERROR
+test_embedded_record_cannot_diverge (test_monthly.MonthlyTests.test_embedded_record_cannot_diverge) ... ERROR
+test_exclusions_and_count_arithmetic (test_monthly.MonthlyTests.test_exclusions_and_count_arithmetic) ... ERROR
+test_full_coverage_claim_requires_source_coverage (test_monthly.MonthlyTests.test_full_coverage_claim_requires_source_coverage) ... ERROR
+test_incomplete_quality_blocks_approval (test_monthly.MonthlyTests.test_incomplete_quality_blocks_approval) ... ERROR
+test_inconsistent_quality (test_monthly.MonthlyTests.test_inconsistent_quality) ... ERROR
+test_invalid_archived_aggregation_rejected_even_with_matching_hash (test_monthly.MonthlyTests.test_invalid_archived_aggregation_rejected_even_with_matching_hash) ... ERROR
+test_missing_snapshot_and_bad_hash_fail_closed (test_monthly.MonthlyTests.test_missing_snapshot_and_bad_hash_fail_closed) ... ok
+test_negative_fixtures (test_monthly.MonthlyTests.test_negative_fixtures) ... ERROR
+test_pending_rejected_for_publication (test_monthly.MonthlyTests.test_pending_rejected_for_publication) ... ERROR
+test_positive_fixtures_and_revision (test_monthly.MonthlyTests.test_positive_fixtures_and_revision) ... ERROR
+test_revision_id_and_digest_are_verified (test_monthly.MonthlyTests.test_revision_id_and_digest_are_verified) ... ERROR
+test_revision_requires_full_history (test_monthly.MonthlyTests.test_revision_requires_full_history) ... ERROR
+test_same_evidence_reserialized_cannot_double_count (test_monthly.MonthlyTests.test_same_evidence_reserialized_cannot_double_count) ... ERROR
+test_source_snapshots_are_not_ignored (test_monthly.MonthlyTests.test_source_snapshots_are_not_ignored) ... ok
+test_traversal_and_symlink_escape_rejected (test_monthly.MonthlyTests.test_traversal_and_symlink_escape_rejected) ... ERROR
+test_unknown_metric (test_monthly.MonthlyTests.test_unknown_metric) ... ERROR
+test_unknown_status_and_version_rejected (test_monthly.MonthlyTests.test_unknown_status_and_version_rejected) ... ok
+test_withdrawn_publication_not_approved (test_monthly.MonthlyTests.test_withdrawn_publication_not_approved) ... ERROR
+test_anonymous_still_requires_consent (test_recognition.RecognitionTests.test_anonymous_still_requires_consent) ... ok
+test_draft_does_not_require_publication_consent (test_recognition.RecognitionTests.test_draft_does_not_require_publication_consent) ... ok
+test_duplicate_records (test_recognition.RecognitionTests.test_duplicate_records) ... ok
+test_invalid_date (test_recognition.RecognitionTests.test_invalid_date) ... ok
+test_negative_fixtures (test_recognition.RecognitionTests.test_negative_fixtures) ... ok
+test_no_person_fields (test_recognition.RecognitionTests.test_no_person_fields) ... ok
+test_nonpublic_reference (test_recognition.RecognitionTests.test_nonpublic_reference) ... ok
+test_onboarding_documents_complete (test_recognition.RecognitionTests.test_onboarding_documents_complete) ... ok
+test_positive_and_withdrawal_fixtures (test_recognition.RecognitionTests.test_positive_and_withdrawal_fixtures) ... ok
+test_publication_requires_explicit_consent (test_recognition.RecognitionTests.test_publication_requires_explicit_consent) ... ok
+test_publication_requires_review_and_acceptance (test_recognition.RecognitionTests.test_publication_requires_review_and_acceptance) ... ok
+test_withdrawal_requires_tombstone (test_recognition.RecognitionTests.test_withdrawal_requires_tombstone) ... ok
+
+======================================================================
+ERROR: test_approval_before_period_end_rejected (test_monthly.MonthlyTests.test_approval_before_period_end_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 109, in test_approval_before_period_end_rejected
+    self.assertIn('premature-approval', monthly.validate(data, self.artifacts))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_approved_synthetic_is_still_synthetic (test_monthly.MonthlyTests.test_approved_synthetic_is_still_synthetic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 35, in test_approved_synthetic_is_still_synthetic
+    self.assertEqual(monthly.validate(data, self.artifacts, True), [])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_calendar_month_and_december_boundary (test_monthly.MonthlyTests.test_calendar_month_and_december_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 79, in test_calendar_month_and_december_boundary
+    self.assertIn('calendar-period', monthly.validate(self.data, self.artifacts))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_data_kind_cannot_be_relabelled_real (test_monthly.MonthlyTests.test_data_kind_cannot_be_relabelled_real)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 140, in test_data_kind_cannot_be_relabelled_real
+    self.assertIn('data-kind-mismatch', monthly.validate(self.data, self.artifacts))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_definition_or_unit_change_rejected (test_monthly.MonthlyTests.test_definition_or_unit_change_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 71, in test_definition_or_unit_change_rejected
+    self.assertIn('metric-contract-mismatch', monthly.validate(data, self.artifacts))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_draft_sources_cannot_be_promoted (test_monthly.MonthlyTests.test_draft_sources_cannot_be_promoted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 95, in test_draft_sources_cannot_be_promoted
+    self.assertIn('unverified-source', monthly.validate(self.data, self.artifacts))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_duplicate_reference_does_not_double_count (test_monthly.MonthlyTests.test_duplicate_reference_does_not_double_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 42, in test_duplicate_reference_does_not_double_count
+    self.assertIn('duplicate-reference', monthly.validate(self.data, self.artifacts))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_duplicate_source (test_monthly.MonthlyTests.test_duplicate_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 46, in test_duplicate_source
+    self.assertIn('duplicate-snapshot', monthly.validate(self.data, self.artifacts))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_embedded_record_cannot_diverge (test_monthly.MonthlyTests.test_embedded_record_cannot_diverge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 136, in test_embedded_record_cannot_diverge
+    self.assertIn('snapshot-record-mismatch', monthly.validate(self.data, self.artifacts))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_exclusions_and_count_arithmetic (test_monthly.MonthlyTests.test_exclusions_and_count_arithmetic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 89, in test_exclusions_and_count_arithmetic
+    self.assertEqual(monthly.validate(self.data, self.artifacts), [])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_full_coverage_claim_requires_source_coverage (test_monthly.MonthlyTests.test_full_coverage_claim_requires_source_coverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 75, in test_full_coverage_claim_requires_source_coverage
+    self.assertIn('unsupported-coverage', monthly.validate(self.data, self.artifacts))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_incomplete_quality_blocks_approval (test_monthly.MonthlyTests.test_incomplete_quality_blocks_approval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 100, in test_incomplete_quality_blocks_approval
+    self.assertIn('publication-not-verified', monthly.validate(data, self.artifacts, True))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_inconsistent_quality (test_monthly.MonthlyTests.test_inconsistent_quality)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 104, in test_inconsistent_quality
+    self.assertIn('data-quality-status', monthly.validate(self.data, self.artifacts))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_invalid_archived_aggregation_rejected_even_with_matching_hash (test_monthly.MonthlyTests.test_invalid_archived_aggregation_rejected_even_with_matching_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 162, in test_invalid_archived_aggregation_rejected_even_with_matching_hash
+    self.assertIn('invalid-history-semantics', monthly.validate(data, root))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_negative_fixtures (test_monthly.MonthlyTests.test_negative_fixtures)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 28, in test_negative_fixtures
+    self.assertTrue(monthly.validate(load_json(p), self.artifacts))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_pending_rejected_for_publication (test_monthly.MonthlyTests.test_pending_rejected_for_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 31, in test_pending_rejected_for_publication
+    self.assertIn('publication-not-approved', monthly.validate(self.data, self.artifacts, True))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_positive_fixtures_and_revision (test_monthly.MonthlyTests.test_positive_fixtures_and_revision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 24, in test_positive_fixtures_and_revision
+    self.assertEqual(monthly.validate(load_json(p), self.artifacts), [])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_revision_id_and_digest_are_verified (test_monthly.MonthlyTests.test_revision_id_and_digest_are_verified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 149, in test_revision_id_and_digest_are_verified
+    self.assertIn('history-contract-mismatch', monthly.validate(data, self.artifacts))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_revision_requires_full_history (test_monthly.MonthlyTests.test_revision_requires_full_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 144, in test_revision_requires_full_history
+    self.assertIn('revision-history', monthly.validate(self.data, self.artifacts))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_same_evidence_reserialized_cannot_double_count (test_monthly.MonthlyTests.test_same_evidence_reserialized_cannot_double_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 61, in test_same_evidence_reserialized_cannot_double_count
+    self.assertIn('duplicate-provenance', monthly.validate(self.data, root))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_traversal_and_symlink_escape_rejected (test_monthly.MonthlyTests.test_traversal_and_symlink_escape_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 129, in test_traversal_and_symlink_escape_rejected
+    (root/'source-evidence.json').symlink_to(self.artifacts/'source-evidence.json')
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1386, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: '<REPO>\\community\\reporting\\fixtures\\snapshots\\source-evidence.json' -> '<USER_HOME>\\AppData\\Local\\Temp\\tmppgmjvbr9\\artifacts\\source-evidence.json'
+
+======================================================================
+ERROR: test_unknown_metric (test_monthly.MonthlyTests.test_unknown_metric)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 65, in test_unknown_metric
+    self.assertIn('unknown-evidence', monthly.validate(self.data, self.artifacts))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+======================================================================
+ERROR: test_withdrawn_publication_not_approved (test_monthly.MonthlyTests.test_withdrawn_publication_not_approved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\scripts\community\tests\test_monthly.py", line 113, in test_withdrawn_publication_not_approved
+    self.assertIn('publication-not-approved', monthly.validate(self.data, self.artifacts, True))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\validate_monthly.py", line 42, in validate
+    raw = snapshot(artifact_root, item['artifact_path'], item['sha256'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPO>\scripts\community\contract_tools.py", line 66, in snapshot
+    raise ValueError('snapshot integrity')
+ValueError: snapshot integrity
+
+----------------------------------------------------------------------
+Ran 89 tests in 2.736s
+
+FAILED (errors=23)
+[exit code: 1]
+$ python scripts/community/check_docs.py
+PASS: local Markdown targets and fences; remote URLs/anchors not checked
+[exit code: 0]
